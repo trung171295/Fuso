@@ -310,6 +310,10 @@ h1, h2, h3, h4, h5, h6, p {
 p {
   margin-bottom: 1.5rem; }
 
+#wrapper {
+  position: relative;
+  display: block; }
+
 @font-face {
   font-family: 'UTM Avo';
   src: url("../fonts/UTMAvo/UTMAvo.eot");
@@ -450,104 +454,6 @@ p {
   font-weight: normal;
   font-style: normal; }
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-  background-image: url(../../images/icon/arrow-next.png);
-  right: 3%; }
-
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-  background-image: url(../../images/icon/arrow.png);
-  left: 3%; }
-
-.btn-submit {
-  font: 14px "Arial";
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 1rem 7rem;
-  background-color: #e50000;
-  position: relative;
-  outline: none;
-  cursor: pointer;
-  border-color: #e50000; }
-  .btn-submit::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    color: #ffffff;
-    font-size: 1rem;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900; }
-
-.btn-seeall {
-  padding: 0.5rem 2rem;
-  color: #ffffff;
-  background-color: #ff3333;
-  border-radius: 5px;
-  text-transform: uppercase;
-  border-color: transparent;
-  cursor: pointer; }
-  .btn-seeall:focus {
-    outline: none;
-    border-color: transparent;
-    box-shadow: 0 0 0 0.1rem #ff3333; }
-
-.btn-seeall.blue {
-  background-color: #00529c; }
-  .btn-seeall.blue:focus {
-    box-shadow: 0 0 0 0.1rem #00529c; }
-
-.link-seemore {
-  position: absolute;
-  bottom: 0.5rem; }
-  .link-seemore a {
-    font: 16px "Arial";
-    color: #00529c;
-    line-height: 1.6rem;
-    position: relative;
-    text-decoration: none; }
-    .link-seemore a::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      width: 100%;
-      height: 1px;
-      background-color: #e50000; }
-
-.pagi {
-  margin-top: 5.5rem; }
-  .pagi ul.pagination {
-    justify-content: center; }
-    .pagi ul.pagination li a {
-      border: none;
-      background-color: transparent;
-      font: 1.1rem "Arail";
-      color: #333333;
-      padding: 0.5rem 0.9rem;
-      cursor: pointer; }
-      .pagi ul.pagination li a:focus {
-        outline: none;
-        box-shadow: none; }
-    .pagi ul.pagination li a.active {
-      background-color: #e50000;
-      border-radius: 5px;
-      color: #ffffff; }
-    .pagi ul.pagination .page-item.disabled .page-link {
-      color: #939394 !important;
-      pointer-events: none;
-      cursor: auto;
-      background-color: transparent;
-      border-color: transparent; }
-
-.nav-menu-mobile-top {
-  display: none; }
-
-#menu {
-  display: none; }
-
 .main-menu {
   background-color: #262626;
   display: block;
@@ -556,15 +462,12 @@ p {
   bottom: 0;
   left: 0;
   overflow: hidden;
-  overflow-y: scroll;
   z-index: 1000;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   width: 100px;
   height: 100%; }
-  .main-menu::-webkit-scrollbar {
-    display: none; }
   .main-menu .logo {
     display: flex;
     justify-content: center;
@@ -578,7 +481,8 @@ p {
       object-fit: cover; }
   .main-menu .nav-menu {
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: auto; }
     .main-menu .nav-menu .nav-main-menu {
       display: flex;
       justify-content: center;
@@ -684,6 +588,90 @@ p {
       .main-footer .license .license-brands p {
         font: 1rem "Arial";
         color: #ffffff; }
+
+.btn-submit {
+  font: 14px "Arial";
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1rem 7rem;
+  background-color: #e50000;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  border-color: #e50000; }
+  .btn-submit::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+
+.btn-seeall {
+  padding: 0.5rem 2rem;
+  color: #ffffff;
+  background-color: #ff3333;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border-color: transparent;
+  cursor: pointer; }
+  .btn-seeall:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 0.1rem #ff3333; }
+
+.btn-seeall.blue {
+  background-color: #00529c; }
+  .btn-seeall.blue:focus {
+    box-shadow: 0 0 0 0.1rem #00529c; }
+
+.link-seemore {
+  position: absolute;
+  bottom: 0.5rem; }
+  .link-seemore a {
+    font: 16px "Arial";
+    color: #00529c;
+    line-height: 1.6rem;
+    position: relative;
+    text-decoration: none; }
+    .link-seemore a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      background-color: #e50000; }
+
+.pagi {
+  margin-top: 5.5rem; }
+  .pagi ul.pagination {
+    justify-content: center; }
+    .pagi ul.pagination li a {
+      border: none;
+      background-color: transparent;
+      font: 1.1rem "Arail";
+      color: #333333;
+      padding: 0.5rem 0.9rem;
+      cursor: pointer; }
+      .pagi ul.pagination li a:focus {
+        outline: none;
+        box-shadow: none; }
+    .pagi ul.pagination li a.active {
+      background-color: #e50000;
+      border-radius: 5px;
+      color: #ffffff; }
+    .pagi ul.pagination .page-item.disabled .page-link {
+      color: #939394 !important;
+      pointer-events: none;
+      cursor: auto;
+      background-color: transparent;
+      border-color: transparent; }
 
 .main {
   margin-left: 100px;
@@ -1444,3 +1432,58 @@ p {
             opacity: 0.5; }
         .related-news .list-blogs-related .blogs-related-item .blogs-related-item-content .link-seemore {
           bottom: 0; }
+
+.list-question #accordionListQuestion {
+  padding-right: 2.5rem; }
+  .list-question #accordionListQuestion .question-item .question-item-header {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding-right: 2.5rem; }
+    .list-question #accordionListQuestion .question-item .question-item-header .question-title {
+      position: relative;
+      cursor: pointer; }
+      .list-question #accordionListQuestion .question-item .question-item-header .question-title::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/icon/arr_red.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transition: transform 0.5s ease-out;
+        -webkit-transition: transform 0.5s ease-out;
+        -moz-transition: transform 0.5s ease-out;
+        font: 100 2.3rem "Arial";
+        color: #e50000;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 600; }
+      .list-question #accordionListQuestion .question-item .question-item-header .question-title h3 {
+        font: bold 1rem "Arial";
+        color: #333333;
+        line-height: 4.3rem; }
+    .list-question #accordionListQuestion .question-item .question-item-header .question-title[aria-expanded="true"]::before {
+      transform: translateY(-50%);
+      background-image: url(../images/icon/arr.png);
+      color: #cccccc;
+      transition: transform 0.5s ease-in;
+      -webkit-transition: transform 0.5s ease-in;
+      -moz-transition: transform 0.5s ease-in; }
+  .list-question #accordionListQuestion .question-item .question-item-body {
+    padding: 3.6rem 3.6rem 3.6rem 1.6rem; }
+    .list-question #accordionListQuestion .question-item .question-item-body p {
+      font: 1rem "Arial";
+      color: #333333;
+      line-height: 2.4rem; }
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background-image: url(../../images/icon/arrow-next.png);
+  right: 3%; }
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background-image: url(../../images/icon/arrow.png);
+  left: 3%; }

@@ -6,13 +6,9 @@
     bottom: 0;
     left: 0;
     overflow: hidden;
-    overflow-y: scroll;
     z-index: 1000;
     @include transition(all 0.5s ease-out);
     @include size(100px,100%);
-    &::-webkit-scrollbar{
-        display: none;
-    }
     .logo{
         @include flex(center,center);
         @include size(100%,100px);
@@ -26,6 +22,7 @@
     .nav-menu{
         display: block;
         width: 100%;
+        height: auto;
         .nav-main-menu{
             @include flex(center,center);
             @include size(100%,null);

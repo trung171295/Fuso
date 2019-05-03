@@ -309,6 +309,10 @@ h1, h2, h3, h4, h5, h6, p {
 p {
   margin-bottom: 1.5rem; }
 
+#wrapper {
+  position: relative;
+  display: block; }
+
 @font-face {
   font-family: 'UTM Avo';
   src: url("../fonts/UTMAvo/UTMAvo.eot");

@@ -3,12 +3,10 @@
 @import 'Helpers/_fonts.scss';
 @import 'Helpers/_variables.scss';
 @import 'Helpers/_mixin.scss';
-@import 'Helpers/_assets.scss';
-@import 'Components/_buttons.scss';
-@import 'Components/_pagination.scss';
-@import 'Components/_menu_mobile.scss';
 @import 'Components/_header.scss';
 @import 'Components/_footer.scss';
+@import 'Components/_buttons.scss';
+@import 'Components/_pagination.scss';
 @import 'Layout/_home.scss';
 @import 'Layout/_abouts.scss';
 @import 'Layout/_products.scss';
@@ -18,3 +16,4 @@
 @import 'Layout/_contact.scss';
 @import 'Layout/_blogs.scss';
 @import 'Layout/_recruitment.scss';
+@import 'Helpers/_assets.scss';

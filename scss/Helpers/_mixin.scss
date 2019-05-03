@@ -20,7 +20,7 @@
 	max-height: $value;
 	min-height: $value;
 }
-@mixin tranform($pro) {
+@mixin tranform($pro...) {
 	transform: $pro;
 	-webkit-transform: $pro;
 	-moz-transform: $pro;
