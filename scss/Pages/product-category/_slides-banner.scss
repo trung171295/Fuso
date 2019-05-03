@@ -1,0 +1,13 @@
+.slides-banner{
+    @include size(100%,380px);
+    .sw-slides-banner{
+        @include size(100%,100%);
+        .swiper-slide{
+            @include size(100%,100%);
+            img{
+                @include size(100%,100%);
+                @include img-ob(null,cover);
+            }
+        }
+    }
+}

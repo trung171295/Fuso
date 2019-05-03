@@ -1,0 +1,35 @@
+.network-social-fixed{
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    z-index: 2;
+    .nav-network-social-fixed{
+        list-style-type: none;
+        li{
+            margin-bottom: 1px;
+            @include size(60px,55px);
+            background-color: #ff0000;
+            @include flex(center,center);
+            z-index: 1000;
+        }
+    }
+}
+.scroll-top{
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    @include size(54px,54px);
+    border-radius: 50%;
+    border: 1px solid $color-border;
+    @include flex(center,center);
+    color: $color-border;
+    background-color: $color-bg;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    @include transition(all 0.4s ease-in);
+    &:hover{
+        opacity: 1;
+        @include transition(all 0.4s ease-in-out)
+    }
+}

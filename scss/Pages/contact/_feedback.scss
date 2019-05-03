@@ -1,0 +1,78 @@
+.feedback{
+    border-top: 1px solid $color-border;
+    .title{
+        padding: 2rem 0;
+        h3{
+            @include text(1.4rem 'Arial',$color-gr);
+        }
+    }
+    .form-feedback{
+        .form-group{
+            #keywork{
+                background-color: $color-gr;
+                border-radius: 0;
+                height: 3rem;
+                color: $color-w;
+                option{
+                    color: $color-w;
+                    padding: 1rem;
+                }
+                option:not(:first-of-type) {
+                    color: $color-w;
+                  }
+                &:focus{
+                    outline: $color-gr;
+                    border-color: $color-gr;
+                    box-shadow:none;
+                }
+            }
+        }
+        input.form-control{
+            border-radius: 0;
+            color: $color-gr;
+            height: 3rem;
+            &:focus{
+                outline: none;
+                border-color: $color-gr;
+                box-shadow: 0 0 0 0.1rem $color-gr;
+            }
+        }
+        textarea.form-control{
+            height: 21rem;
+            border-radius: 0;
+            color: $color-gr;
+            &:focus{
+                outline: none;
+                border-color: $color-gr;
+                box-shadow: 0 0 0 0.1rem $color-gr;
+            }
+        }
+        .footer-feedback{
+            padding: 3.5rem 0;
+            .security-title{
+                margin-bottom: 2.5rem;
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .security-summary{
+                margin-bottom: 1.7rem;
+                p{
+                    line-height: 1.7rem;
+                    text-align: justify;
+                }
+            }
+            .security-checkbox{
+                @include flex(null,center);
+                margin-bottom: 1rem;
+                input[type=checkbox]{
+                    @include size(1rem,1rem);
+                }
+                p{
+                    margin-bottom: 0;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}

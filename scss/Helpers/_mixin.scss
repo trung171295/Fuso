@@ -1,0 +1,68 @@
+@mixin text-menu {
+	font: bold 14px Arial;
+	color: $color-w;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+@mixin title-category {
+	font: bold 28px Arial;
+	color: $color-gr;
+}
+@mixin size($width:null,$height:null){
+	width: $width;
+	height: $height;
+}
+@mixin img-ob($value1,$value2){
+	width: $value1;
+	object-fit: $value2;
+}
+@mixin mheight($value) {
+	max-height: $value;
+	min-height: $value;
+}
+@mixin tranform($pro) {
+	transform: $pro;
+	-webkit-transform: $pro;
+	-moz-transform: $pro;
+}
+@mixin transition($pro...) {
+	transition: $pro;
+	-webkit-transition: $pro;
+	-moz-transition: $pro;
+}
+@mixin box-sizing($pro) {
+	box-sizing: $pro;
+	-webkit-box-sizing: $pro;
+	-moz-box-sizing: $pro;
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+	@if $inset {
+		box-shadow: inset $top $left $blur $color;
+	} @else {
+		box-shadow: $top $left $blur $color;
+	}
+}
+@mixin content-empty($pro:null,$top:null,$left:null,$right:null,$bottom:null) {
+	content:$pro;
+	position: absolute;
+	top: $top;
+	left: $left;
+	right: $right;
+	bottom:$bottom;
+}
+@mixin text($value,$color){
+	font: $value;
+	color: $color;
+}
+@mixin flex($content:null,$item:null){
+	display: flex;
+	justify-content: $content;
+	align-items: $item;
+}
+@mixin grid($value1,$value2,$value3:null,$value4:null) {
+	display: grid;
+	grid-template-columns: $value1;
+	grid-template-rows: $value2;
+	justify-content: $value3;
+	align-items: $value4;
+}

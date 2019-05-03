@@ -1,0 +1,55 @@
+.body{
+    padding-bottom: 4.5rem;
+    .group-name,.name-requitment{
+        padding: 3rem 0;
+        padding-bottom: 2rem;
+        padding-right: 6.4rem;
+        h1{
+            @include text(2rem 'Arial',#d70202);
+        }
+        h2{
+            @include text(30px 'Arial',$color-gr);
+            line-height: 2.5rem;
+        }
+    }
+    .push-date{
+        padding-bottom: 2.8rem;
+        p{
+            @include text(12px 'Arial',$color-gr);
+            line-height: auto;
+        }
+    }
+    .summary-requitment{
+        p{
+            line-height: 2.5rem;
+        }
+    }
+    .body-text{
+        margin-bottom: 3rem;
+        div{
+            padding: 4.5rem 0;
+            column-count: 2;
+            column-gap: 4.5rem;
+            h1{
+                line-height: 3rem;
+            }
+            h2{
+                line-height: 2.5rem;
+            }
+            h3{
+                line-height: 2rem;
+            }
+            p{
+                img{
+                    @include img-ob(null,cover);
+                    display: block;
+                    margin:auto;
+                }
+            }
+        }
+        h4{
+            @include text(bold 14px 'Arial',$color-gr);
+            line-height: 1.5rem;
+        }
+    }
+}

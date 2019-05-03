@@ -1,0 +1,36 @@
+.list-product-category{
+    .product-brands{
+        padding: 2rem 0;
+        border-bottom: 1px solid $color-border;
+        @include size(100%,null);
+        img{
+            @include img-ob(null,cover);
+        }
+    }
+    .products-container{
+        @include grid(repeat(3,minmax(230px,1fr)),auto);
+        grid-column-gap: 5rem;
+        grid-row-gap: 2rem;
+        padding: 2.5rem 3rem;
+        .products-item{
+            .products-item-car{
+                margin-bottom: 1.5rem;
+                img{
+                    @include img-ob(null,contain);
+                    @include mheight(110px);
+                }
+            }
+            .product-item-brand{
+                img{
+                    @include img-ob(null,cover);
+                }
+                margin-bottom: 1rem;
+            }
+            .product-item-weight{
+                span.fusa{
+                    @include text(bold 1.1rem 'Arial',$color-gr);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.community{
+    padding: 6rem 4.5rem;
+    @include flex(null,null);
+    .text{
+        width: 50%;
+        padding: 3rem;
+        p{
+            @include text(24px 'Arial',$color-gr);
+            line-height: 1.8rem;
+        }
+    }
+}

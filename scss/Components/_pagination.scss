@@ -1,0 +1,31 @@
+.pagi{
+    margin-top: 5.5rem;
+    ul.pagination{
+        justify-content: center;
+        li{
+            a{
+                border: none;
+                background-color: transparent;
+                @include text(1.1rem 'Arail',$color-gr);
+                padding:0.5rem 0.9rem;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                    box-shadow:none;
+                }
+            }
+            a.active{
+                background-color: $color-active;
+                border-radius: 5px;
+                color: $color-w;
+            }
+        }
+        .page-item.disabled .page-link{
+            color:#939394!important;
+            pointer-events: none;
+            cursor: auto;
+            background-color: transparent;
+            border-color: transparent;     
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.contact-info{
+    margin-bottom: 5rem;
+    .group-name{
+        h1{
+            @include text(30px 'Arial',#e50000);
+            text-transform: uppercase;
+        }
+    }
+    .site-tite{
+        margin-bottom: 2rem;
+        h3{
+            @include text(bold 1rem 'Arial',$color-gr);
+            line-height: 1.5rem;
+            text-transform: uppercase;
+        }
+    }
+    .address{
+        p{
+            margin-bottom: 0;
+            line-height: 1.7rem;
+        }
+    }
+}

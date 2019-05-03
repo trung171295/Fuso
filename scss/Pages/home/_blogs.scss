@@ -1,0 +1,49 @@
+.blogs{
+    background-color: $color-bg-blogs;
+    padding: 1rem 2rem;
+    .blogs-title{
+        margin: 1.5rem 0;
+        h1{
+            @include text(bold 2rem 'Arial',$color-w);
+            text-transform: uppercase;
+        }
+    }
+    .sw-blogs{
+        position: relative;
+        .swiper-slide{
+            @include size(100%,null);
+            .slide-blog-item{
+                @include size(100%,null);
+                .blog-item-img{
+                    @include size(100%,null);
+                    margin-bottom: 0;
+                    img{
+                        @include img-ob(100%,cover);
+                        @include mheight(316px);
+                    }
+                }
+                .blog-item-headline{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgba($color: #000000, $alpha: 0.5);
+                    padding: 1rem 1.3rem;
+                    h3{
+                        @include text(14px 'Arial',null);
+                        a{
+                            text-decoration: none;
+                            color: $color-w;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            position: relative;
+            margin:1rem 0;
+            width: 100%;
+            bottom: 0s;
+        }
+    }
+}
