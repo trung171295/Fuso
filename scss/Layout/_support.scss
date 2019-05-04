@@ -1,5 +1,5 @@
 .list-post{
-    padding: 5.5rem 5rem;
+    padding: 6.2rem 5rem;
     .post-item{
         width: 100%;
         margin-bottom: 3.5rem;
@@ -8,7 +8,7 @@
         .post-item-img{
             @include size(40%,100%);
             img{
-                @include size(100%,322px);
+                @include size(100%,253px);
                 @include img-ob(100%,cover);
             }
         }

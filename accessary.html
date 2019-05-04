@@ -1,4 +1,4 @@
-z<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,394 +11,455 @@ z<!DOCTYPE html>
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div id="wrapper">
-
-        <!-- header -->
-        <header class="main-header">
-
-            <!-- main-menu -->
-            <div class="main-menu">
-                <!-- logo -->
-                <div class="logo">
-                    <a href="#"><img src="" alt=""></a>
-                </div>
-                <!-- nav-menu -->
-                <div class="nav-menu">
-                    <ul class="nav nav-main-menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="" alt="">
-                                <span>sản phẩm</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="" alt="">
-                                <span>dịch vụ</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="" alt="">
-                                <span>phụ tùng</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="" alt="">
-                                <span>showroom</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="" alt="">
-                                <span>hỗ trợ</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- language -->
-                <div class="language">
-                    <ul class="nav nav-language">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">en</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">vi</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- navitop-menu-mobile -->
-            <div class="nav-menu-mobile-top">
-                <div class="icon-bar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="logo-mobile">
+        <div id="wrapper">
+        
+            <!-- header -->
+            <header class="main-header">
+        
+                <!-- main-menu -->
+                <div class="main-menu">
+                    <!-- logo -->
                     <a href="#">
-                        <img src="" alt="">
+                        <div class="logo">
+                            <img src="images/logo/logo.png" alt="">
+                        </div>
                     </a>
+                    <!-- nav-menu -->
+                    <div class="nav-menu">
+                        <ul class="nav nav-main-menu">
+                            <!-- li sản phẩm -->
+                            <li class="nav-item">
+                                <a href="products.html" class="nav-link">
+                                    <img src="images/icon/sp.png" alt="">
+                                    <span>sản phẩm</span>
+                                </a>
+                                <!-- child-menu -->
+                                <div class="has-child-menu">
+                                    <ul class="nav nav-has-child-menu">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <img src="" alt="">
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                            </li>
+                            <!-- li dịch vụ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="images/icon/dv.png" alt="">
+                                    <span>dịch vụ</span>
+                                </a>
+                            </li>
+                            <!-- li phụ tùng -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="images/icon/pt.png" alt="">
+                                    <span>phụ tùng</span>
+                                </a>
+                            </li>
+                            <!-- li showroom -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="images/icon/sr.png" alt="">
+                                    <span>showroom</span>
+                                </a>
+                            </li>
+                            <!-- li hỗ trợ -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="images/icon/ht.png" alt="">
+                                    <span>hỗ trợ</span>
+                                </a>
+                            </li>
+                            <!-- search -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <img src="images/icon/search.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- language -->
+                    <div class="language">
+                        <ul class="nav nav-language">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">en</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link active">vi</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+        
+                <!-- navitop-menu-mobile -->
+                <div class="nav-menu-mobile-top">
+                    <div class="icon-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo-mobile">
+                        <a href="#">
+                            <img src="images/logo/logo_molbie.png" alt="">
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- main-menu-mobile -->
+                <nav id="menu">
+                    <ul>
+                        <!-- if has-child -->
+                        <li>
+                            <a href="#">
+                                <img src="" alt="">
+                                <span> sản phẩm</span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- if has-child -->
+                        <li>
+                            <span><img src="" alt="">dịch vụ</span>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- if has-child -->
+                        <li>
+                            <span><img src="" alt=""> sản phẩm</span>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- if has-child -->
+                        <li>
+                            <span><img src="" alt=""> sản phẩm</span>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="">
+                                        <span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+        
+                        <li>
+                            <a href="#"><img src="" alt="">
+                                <span>hỗ trợ</span></a>
+                        </li>
+                    </ul>
+                </nav>
+        
+            </header>
+        
+            <!-- main -->
+            <section class="main">
+        
+                <!-- list-product -->
+                <section class="list-product">
+                    <div class="products-container">
+                        <div class="products-item">
+                            <div class="product-item-img">
+                                <a href="#" data-fancybox data-src="#id-modal">
+                                    <img src="images/accessary/Layer 768.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="product-item-name">
+                                <p><a href="#">Phụ tùng xe</a></p>
+                            </div>
+                        </div>
+                        <div class="products-item">
+                            <div class="product-item-img">
+                                <a href="#" data-fancybox data-src="#id-modal">
+                                    <img src="images/accessary/Layer 769.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="product-item-name">
+                                <p><a href="#">Phụ tùng xe</a></p>
+                            </div>
+                        </div>
+                        <div class="products-item">
+                            <div class="product-item-img">
+                                <a href="#" data-fancybox data-src="#id-modal">
+                                    <img src="images/accessary/Layer 770.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="product-item-name">
+                                <p><a href="#">Phụ tùng xe</a></p>
+                            </div>
+                        </div>
+                        <div class="products-item">
+                            <div class="product-item-img">
+                                <a href="#" data-fancybox data-src="#id-modal">
+                                    <img src="images/accessary/Layer 771.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="product-item-name">
+                                <p><a href="#">Phụ tùng xe</a></p>
+                            </div>
+                        </div>
+                        <div class="products-item">
+                            <div class="product-item-img">
+                                <a href="#" data-fancybox data-src="#id-modal">
+                                    <img src="images/accessary/Layer 772.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="product-item-name">
+                                <p><a href="#">Phụ tùng xe</a></p>
+                            </div>
+                        </div>
+                        <div class="products-item">
+                            <div class="product-item-img">
+                                <a href="#" data-fancybox data-src="#id-modal">
+                                    <img src="images/accessary/Layer 773.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="product-item-name">
+                                <p><a href="#">Phụ tùng xe</a></p>
+                            </div>
+                        </div>
+                        <div class="products-item">
+                            <div class="product-item-img">
+                                <a href="#" data-fancybox data-src="#id-modal">
+                                    <img src="images/accessary/Layer 774.png" alt="" title="">
+                                </a>
+                            </div>
+                            <div class="product-item-name">
+                                <p><a href="#">Phụ tùng xe</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+            </section>
+        
+        
+            <!-- footer -->
+            <footer class="main-footer">
+                <!-- main-footer -->
+                <section class="footer">
+                    <div class="top-footer">
+                        <!-- menu-footer -->
+                        <div class="menu-footer">
+                            <ul class="nav nav-menu-footer">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">liên hệ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">tuyển dụng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">tới trang</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <!-- network-social-footer -->
+                        <div class="network-social-footer">
+                            <ul class="nav nav-network-social-footer">
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fab fa-youtube"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fab fa-facebook-f"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fab fa-google-plus-g"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><i class="fab fa-twitter"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>@2019 Thaco - Trường Hải Auto</p>
+                    </div>
+                </section>
+        
+                <!-- license -->
+                <section class="license">
+                    <div class="license-logo">
+                        <a href="#">
+                            <img src="images/logo/logo_molbie.png" alt="">
+                        </a>
+                    </div>
+                    <div class="license-brands">
+                        <p>Thương hiệu thuộc <span><img src="images/logo/daimler.png" alt=""></span> và được phân phối chính
+                            thức bởi <span><img src="images/logo/thaco.png" alt=""></span></p>
+                    </div>
+                </section>
+            </footer>
+        
 
-            <!-- main-menu-mobile -->
-            <nav id="menu">
-                <ul>
-                    <!-- if has-child -->
+            <!-- moal fancybox -->
+            <section id="id-modal">
+                <div class="modal-body">
+                    <div class="img-product">
+                        <img src="images/accessary/Layer 771.png" alt="" title="">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-name">
+                            <h3>khung xương ghế</h3>
+                        </div>
+                        <div class="specifications">
+                            <ul class="nav nav-specifications">
+                                <li>
+                                    <p>Các loại khung xương ghế, thông số kỹ thuậkt theo yêu cầu cảu khách hàng.</p>
+                                </li>
+                                <li>
+                                    <p>Ghế tải:Towner 705A, Towner 905A,Ohlin cabin 1800,Olin cabin 1995, FLD 250D, FD500/500-4WD,Kia New frontier K200 & K250.</p>
+                                </li>
+                                <li>
+                                    <p>Ghế bus:Univeser, W300,TB 120SL - W375R.E4, TB120SL-W3775l.E4, TB85S, (34), TB79S</p>
+                                </li>
+                                <li>
+                                    <p>Ghế xe du lịch ...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- network-social-fixed -->
+            <div class="network-social-fixed">
+                <ul class="nav-network-social-fixed">
                     <li>
-                        <span><img src="" alt=""> sản phẩm</span>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                        </ul>
+                        <a href="#">
+                            <img src="images/icon/phone.png" alt="">
+                        </a>
                     </li>
-                    <!-- if has-child -->
                     <li>
-                        <span><img src="" alt="">dịch vụ</span>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                        </ul>
+                        <a href="#">
+                            <img src="images/icon/phone.png" alt="">
+                        </a>
                     </li>
-                    <!-- if has-child -->
                     <li>
-                        <span><img src="" alt=""> sản phẩm</span>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- if has-child -->
-                    <li>
-                        <span><img src="" alt=""> sản phẩm</span>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="" alt="">
-                                    <span></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="#"><img src="" alt="">
-                            <span>hỗ trợ</span></a>
+                        <a href="#">
+                            <img src="images/icon/loca.png" alt="">
+                        </a>
                     </li>
                 </ul>
-            </nav>
-
-        </header>
-
-        <!-- main -->
-        <section class="main">
-
-            <!-- list-product -->
-            <section class="list-product">
-                <div class="products-container">
-                    <div class="products-item">
-                        <div class="product-item-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="product-item-name">
-                            <p><a href="#">Phụ tùng xe</a></p>
-                        </div>
-                    </div>
-                    <div class="products-item">
-                        <div class="product-item-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="product-item-name">
-                            <p><a href="#">Phụ tùng xe</a></p>
-                        </div>
-                    </div>
-                    <div class="products-item">
-                        <div class="product-item-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="product-item-name">
-                            <p><a href="#">Phụ tùng xe</a></p>
-                        </div>
-                    </div>
-                    <div class="products-item">
-                        <div class="product-item-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="product-item-name">
-                            <p><a href="#">Phụ tùng xe</a></p>
-                        </div>
-                    </div>
-                    <div class="products-item">
-                        <div class="product-item-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="product-item-name">
-                            <p><a href="#">Phụ tùng xe</a></p>
-                        </div>
-                    </div>
-                    <div class="products-item">
-                        <div class="product-item-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="product-item-name">
-                            <p><a href="#">Phụ tùng xe</a></p>
-                        </div>
-                    </div>
-                    <div class="products-item">
-                        <div class="product-item-img">
-                            <a href="#">
-                                <img src="" alt="">
-                            </a>
-                        </div>
-                        <div class="product-item-name">
-                            <p><a href="#">Phụ tùng xe</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </section>
-
-        <!-- footer -->
-        <footer>
-            <!-- main-footer -->
-            <section class="main-footer">
-                <!-- menu-footer -->
-                <div class="menu-footer">
-                    <ul class="nav nav-menu-footer">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">giới thiệu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">tin tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">liên hệ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">tuyển dụng</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">tới trang</a>
-                        </li>
-                    </ul>
-                </div>
-            
-                <!-- copyright -->
-                <div class="coypright">
-                    <p>@2019 Thaco - Trường Hải Auto</p>
-                </div>
-            
-                <!-- network-social-footer -->
-                <div class="network-social-footer">
-                    <ul class="nav nav-network-social-footer">
-                        <li>
-                            <a href="#">
-                                <span><i class="fab fa-youtube"></i></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><i class="fab fa-facebook-f"></i></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><i class="fab fa-google-plus-g"></i></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><i class="fab fa-twitter"></i></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- license -->
-            <section class="license">
-                <div class="license-logo">
-                    <a href="#">
-                        <img src="" alt="">
-                    </a>
-                </div>
-                <div class="license-brands">
-                    <p>Thương hiệu thuộc <span><img src="" alt=""></span> và được phân phối chính thức bởi <span><img src="" alt=""></span></p>
-                </div>
-            </section>
-        </footer>
-
-        <!-- network-social-fixed -->
-        <div class="network-social-fixed">
-            <ul class="nav-network-social-fixed">
-                <li>
-                    <a href="#">
-                        <img src="" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="" alt="">
-                    </a>
-                </li>
-            </ul>
+            </div>
+        
+            <!-- button-scroll-top -->
+            <div class="scroll-top">
+                <span><i class="fas fa-chevron-up"></i></span>
+            </div>
         </div>
-
-        <!-- button-scroll-top -->
-        <div class="scroll-top">
-        </div>
-    </div>
-
 
     <!-- import file js -->
     <script src="js/jquery.min.js"></script>
@@ -407,6 +468,7 @@ z<!DOCTYPE html>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.mmenu.all.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
     <!-- end import file js -->

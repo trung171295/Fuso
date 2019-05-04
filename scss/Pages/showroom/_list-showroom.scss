@@ -1,0 +1,42 @@
+.maps-content{
+    padding: 2.85rem 0;
+    position: relative;
+    .list-showroom{
+        padding: 2rem 0;
+        .showroom{
+            margin-bottom: 2.85rem;
+            .showroom-name{
+                padding-left: 2.5rem;
+                position: relative;
+                margin-bottom: 1rem;
+                &::before{
+                    @include content-empty('',50%,0,null,null);
+                    @include tranform(translateY(-50%));
+                    display: block;
+                    width: 2rem;
+                    height: 3px;
+                    background-color: $color-active;
+                }
+                h3{
+                    @include text(1.4rem 'Arial',$color-gr);
+                    a{
+                        color: $color-gr;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .showroom-address{
+                p{
+                    margin-bottom: 1rem;
+                    a{
+                        color: $color-gr;
+                        opacity: 0.8;
+                    }
+                    span.hotline{
+                        color: $color-active;
+                    }
+                }
+            }
+        }
+    }
+}

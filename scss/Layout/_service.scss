@@ -51,5 +51,8 @@
             @include text(bold 14px 'Arial',$color-gr);
             line-height: 1.5rem;
         }
+        h3{
+            line-height: 2rem;
+        }
     }
 }

@@ -1,0 +1,39 @@
+.select-value-search{
+    padding: 4.3rem 0;
+    @include grid(3fr 3fr 2fr 2fr 1fr,auto);
+    grid-column-gap: 0.9rem;
+    grid-row-gap: 1.5rem;
+    .form-control{
+        border-radius: 0;
+        background-color: transparent;
+        border-color: $color-border;
+        height: 2.6rem;
+        &:focus{
+            border-color: transparent;
+            @include box-shadow(0,0,0,0.1rem,$color-border);
+        }
+        option{
+           border-bottom: 1px solid $color-border;
+           color: #999999;
+           height: 2.6rem;
+           padding: 1rem 0.5rem;
+           &::selection{
+               background-color: $color-border;
+               padding: 1rem 0.5rem;
+           }
+        }
+    }
+    .btn-search{
+        @include size(100%,100%);
+        background-color: $color-active;
+        @include text(1rem 'Arial',$color-w);
+        text-transform: uppercase;
+        border-color: transparent;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+}

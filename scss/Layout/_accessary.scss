@@ -1,0 +1,35 @@
+.list-product{
+    padding: 5rem;
+    .products-container{
+        @include grid(
+            repeat(3,minmax(230px,1fr)),
+            minmax(230px,auto)
+        );
+        grid-column-gap: 5rem;
+        grid-row-gap: 2rem;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        .products-item{
+            display: block;
+            @include size(100%,null);
+            .product-item-img{
+                @include size(null,180px);
+                @include flex(center,center);
+                margin-bottom: 1rem;
+                img{
+                    @include img-ob(null,cover);
+                }
+            }
+            .product-item-name{
+                p{
+                    @include text(1rem 'Arial',$color-gr);
+                    a{
+                        text-decoration: none;
+                        color: $color-gr;
+                    }
+                }
+            }
+        }
+    }
+}

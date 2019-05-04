@@ -1,0 +1,38 @@
+.search-result{
+    .total-result{
+        margin-bottom: 3rem;
+        h1{
+            @include text(2rem 'Arial',$color-gr);
+            strong{
+                text-transform: uppercase;
+            }
+        }
+    }
+    .list-result{
+        .result-item{
+            @include flex(null,null);
+            margin-bottom: 2rem;
+            .result-item-img{
+                width: 40%;
+                @include mheight(310px);
+                img{
+                    @include img-ob(100%,cover);
+                    @include size(100%,100%);
+                }
+            }
+            .result-item-title{
+                width: 60%;
+                padding-left: 1.5rem;
+                .headline{
+                    margin-bottom: 1.5rem;
+                    h3{
+                        a{
+                            color: $color-gr;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
