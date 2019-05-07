@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/jquery.mmenu.all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,85 +22,243 @@
         <!-- header -->
         <header class="main-header">
 
-            <!-- main-menu -->
-            <div class="main-menu">
-                <!-- logo -->
-                <a href="#">
-                    <div class="logo">
-                        <img src="images/logo/logo.png" alt="">
+            <div class="navigation-container">
+                <!-- main-menu -->
+                <div class="main-menu">
+                    <!-- logo -->
+                    <a href="#">
+                        <div class="logo">
+                            <img src="images/logo/logo.png" alt="">
+                        </div>
+                    </a>
+                    <!-- nav-menu -->
+                    <div class="nav-menu">
+                        <ul class="nav nav-main-menu">
+                            <!-- li sản phẩm -->
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="nav-img">
+                                        <img src="images/icon/sp.png" alt="">
+                                    </div>
+                                    <span>sản phẩm</span>
+                                </a>
+                                <!-- child-menu -->
+                                <div class="has-child-menu">
+                                    <ul class="nav nav-has-child-menu">
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/canter.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/fuso_fa.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/fuso_fj.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/fuso_fz.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/fuso_rosa.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <!-- li dịch vụ -->
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="nav-img">
+                                        <img src="images/icon/dv.png" alt="">
+                                    </div>
+                                    <span>dịch vụ</span>
+                                </a>
+                                <!-- child-menu -->
+                                <div class="has-child-menu">
+                                    <ul class="nav nav-has-child-menu">
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/canter.png" alt=""> -->
+                                                </div>
+                                                <span>Chế độ bảo hành</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/fuso_fa.png" alt=""> -->
+                                                </div>
+                                                <span>Phụ tùng chính hãng</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/fuso_fj.png" alt=""> -->
+                                                </div>
+                                                <span>Phụ tùng tiêu chuẩn</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/fuso_fz.png" alt=""> -->
+                                                </div>
+                                                <span>Dầu & hóa chất chính hãng</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/fuso_fz.png" alt=""> -->
+                                                </div>
+                                                <span>Hỗ trợ kỹ thuật</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/fuso_fz.png" alt=""> -->
+                                                </div>
+                                                <span>Huấn luyện</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- li phụ tùng -->
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="nav-img">
+                                        <img src="images/icon/pt.png" alt="">
+                                    </div>
+                                    <span>phụ tùng</span>
+                                </a>
+                                <div class="has-child-menu">
+                                    <ul class="nav nav-has-child-menu">
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/canter.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/fuso_fa.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/fuso_fj.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <img src="images/categories/menu/fuso_fz.png" alt="">
+                                                </div>
+                                                <span></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- li showroom -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <div class="nav-img">
+                                        <img src="images/icon/sr.png" alt="">
+                                    </div>
+                                    <span>showroom</span>
+                                </a>
+                            </li>
+                            <!-- li hỗ trợ -->
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <div class="nav-img">
+                                        <img src="images/icon/ht.png" alt="">
+                                    </div>
+                                    <span>hỗ trợ</span>
+                                </a>
+                                <div class="has-child-menu">
+                                    <ul class="nav nav-has-child-menu">
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/fuso_fz.png" alt=""> -->
+                                                </div>
+                                                <span>Hỗ trợ kỹ thuật</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item-child">
+                                            <a href="#" class="nav-link-child">
+                                                <div class="nav-child-img">
+                                                    <!-- <img src="images/categories/menu/fuso_fz.png" alt=""> -->
+                                                </div>
+                                                <span>Huấn luyện</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- search -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link search-link">
+                                    <div class="nav-img">
+                                        <img src="images/icon/search.png" alt="">
+                                    </div>
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <!-- nav-menu -->
-                <div class="nav-menu">
-                    <ul class="nav nav-main-menu">
-                        <!-- li sản phẩm -->
-                        <li class="nav-item">
-                            <a href="products.html" class="nav-link">
-                                <img src="images/icon/sp.png" alt="">
-                                <span>sản phẩm</span>
-                            </a>
-                            <!-- child-menu -->
-                            <div class="has-child-menu">
-                                <ul class="nav nav-has-child-menu">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">
-                                            <img src="" alt="">
-                                            <span></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <!-- language -->
+                    <div class="language">
+                        <ul class="nav nav-language">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">en</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link active">vi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                        </li>
-                        <!-- li dịch vụ -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="images/icon/dv.png" alt="">
-                                <span>dịch vụ</span>
-                            </a>
-                        </li>
-                        <!-- li phụ tùng -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="images/icon/pt.png" alt="">
-                                <span>phụ tùng</span>
-                            </a>
-                        </li>
-                        <!-- li showroom -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="images/icon/sr.png" alt="">
-                                <span>showroom</span>
-                            </a>
-                        </li>
-                        <!-- li hỗ trợ -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="images/icon/ht.png" alt="">
-                                <span>hỗ trợ</span>
-                            </a>
-                        </li>
-                        <!-- search -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="images/icon/search.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- language -->
-                <div class="language">
-                    <ul class="nav nav-language">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">en</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link active">vi</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-
             <!-- navitop-menu-mobile -->
             <div class="nav-menu-mobile-top">
                 <div class="icon-bar">
@@ -250,6 +409,7 @@
 
         </header>
 
+
         <!-- main -->
         <section class="main">
 
@@ -269,28 +429,28 @@
                 <section class="menu-product">
                     <ul class="nav nav-menu-product">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">ngoại thất</a>
+                            <a href="#content1" class="nav-link">ngoại thất</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">nội thất</a>
+                            <a href="#content2" class="nav-link">nội thất</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">màu sắc</a>
+                            <a href="#content3" class="nav-link">màu sắc</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">thùng xe</a>
+                            <a href="#content4" class="nav-link">thùng xe</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">khung gầm</a>
+                            <a href="#content6" class="nav-link">khung gầm</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">động cơ</a>
+                            <a href="#content5" class="nav-link">động cơ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">thông số kỹ thuật</a>
+                            <a href="#content7" class="nav-link">thông số kỹ thuật</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">download</a>
+                            <a href="#content8" class="nav-link">download</a>
                         </li>
                     </ul>
                 </section>
@@ -298,7 +458,7 @@
                 <!-- body -->
                 <section class="content-product">
                     <!-- ngoại thất -->
-                    <div class="body-content-product" id="content-1">
+                    <div class="body-content-product" id="content1">
                         <div class="title">
                             <h1>Ngoại thất thiết kế mạnh mẽ</h1>
                         </div>
@@ -309,7 +469,10 @@
                                     <div class="swiper-slide">
                                         <div class="gallery-item">
                                             <div class="gallery-img">
-                                                <a href="#"><img src="images/content/03_07.jpg" alt=""></a>
+                                                <a href="images/content/03_07.jpg" data-fancybox="gallery"
+                                                    data-caption="Mặt ca lăng thiết kế mới. thẩm mỹ lớn tăng khả năng làm mát cho động cơ"
+                                                    data-width="80vh" data-height="auto"><img
+                                                        src="images/content/03_07.jpg" alt=""></a>
                                             </div>
                                             <div class="headline">
                                                 <h3>Mặt ca lăng thiết kế mới, thẩm mỹ, tiết điện lớn tăng khả năng làm
@@ -323,7 +486,11 @@
                                     <div class="swiper-slide">
                                         <div class="gallery-item">
                                             <div class="gallery-img">
-                                                <a href="#"><img src="images/content/03_10.jpg" alt=""></a>
+                                                <a href="images/content/03_10.jpg" data-fancybox="gallery"
+                                                    data-caption="Mặt ca lăng thiết kế mới. thẩm mỹ lớn tăng khả năng làm mát cho động cơ"
+                                                    data-width="80vh" data-height="auto">
+                                                    <img src="images/content/03_10.jpg" alt="">
+                                                </a>
                                             </div>
                                             <div class="headline">
                                                 <h3>>Mặt ca lăng thiết kế mới, thẩm mỹ, tiết điện lớn tăng khả năng làm
@@ -337,7 +504,10 @@
                                     <div class="swiper-slide">
                                         <div class="gallery-item">
                                             <div class="gallery-img">
-                                                <a href="#"><img src="images/content/03_14.jpg" alt=""></a>
+                                                <a href="#" data-fancybox="gallery"
+                                                    data-caption="Mặt ca lăng thiết kế mới. thẩm mỹ lớn tăng khả năng làm mát cho động cơ"
+                                                    data-width="80vh" data-height="auto"><img
+                                                        src="images/content/03_14.jpg" alt=""></a>
                                             </div>
                                             <div class="headline">
                                                 <h3>>Mặt ca lăng thiết kế mới, thẩm mỹ, tiết điện lớn tăng khả năng làm
@@ -510,7 +680,7 @@
 
                     <!-- nội thất -->
 
-                    <div class="body-content-product" id="content-2">
+                    <div class="body-content-product" id="content2">
                         <div class="title">
                             <h1>Nội thất hiện đại tiện nghi</h1>
                         </div>
@@ -592,20 +762,20 @@
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination sw-pagi-furniture"></div>
                             </div>
-                            
+
                         </div>
                     </div>
 
                     <!-- màu sắc -->
-                    <div class="body-content-product" id="content-3">
+                    <div class="body-content-product" id="content3">
                         <div class="gallery">
                             <div class="swiper-container sw-color">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                       <a href="#"><img src="images/content/03_36.jpg" alt=""></a> 
+                                        <a href="#"><img src="images/content/03_36.jpg" alt=""></a>
                                     </div>
                                     <div class="swiper-slide">
-                                            <a href="#"><img src="images/content/03_36.jpg" alt=""></a>
+                                        <a href="#"><img src="images/content/03_36.jpg" alt=""></a>
                                     </div>
                                 </div>
                                 <!-- Add Pagination -->
@@ -615,7 +785,7 @@
                     </div>
 
                     <!-- thùng xe -->
-                    <div class="body-content-product" id="content-4">
+                    <div class="body-content-product" id="content4">
                         <div class="title">
                             <h1>Thùng xe</h1>
                         </div>
@@ -694,14 +864,14 @@
                                         <img src="images/content/03_40.jpg" alt="">
                                     </div>
                                 </div>
-                                 <!-- Add Pagination -->
-                                 <div class="swiper-pagination sw-pagi-container"></div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination sw-pagi-container"></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- động cơ -->
-                    <div class="body-content-product engine" id="content-5">
+                    <div class="body-content-product engine" id="content5">
                         <div class="title">
                             <h1>Động cơ Mitshubishi
                                 <span>
@@ -731,8 +901,22 @@
                                             </a>
                                         </li>
                                     </ul>
+
+                                    <!-- <div class=" standard" data-zoom= 1.7>
+                                        <img src="images/content/Layer 779.png" alt="">
+                                        <div class="copy"></div>
+                                    </div> -->
                                     <div class="info-images">
-                                        <a href="#"><img src="images/content/Layer 779.png" alt=""></a>
+                                        <div class="container__half">
+                                            <div class="standard" data-zoom=1.3>
+                                                <img src="images/content/Layer779.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="container__half">
+                                            <div class="copy">
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -740,7 +924,7 @@
                     </div>
 
                     <!-- khung gầm -->
-                    <div class="body-content-product" id="content-6">
+                    <div class="body-content-product" id="content6">
                         <div class="title">
                             <h1>Hệ thống khung gầm</h1>
                         </div>
@@ -802,26 +986,382 @@
                                         <img src="images/content/03_60.jpg" alt="">
                                     </div>
                                 </div>
-                                  <!-- Add Pagination -->
-                                  <div class="swiper-pagination sw-pagi-chassis"></div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination sw-pagi-chassis"></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- thông số kỹ thuật -->
-                    <div class="body-content-product" id="content-7">
+                    <div class="body-content-product" id="content7">
                         <div class="title">
                             <h1>Bảng thông số kỹ thuật</h1>
                         </div>
                         <div class="table-list-param">
+                            <div class="accordion" id="accordionListParam">
+                                <!-- param-1 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleOne">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-1"
+                                            aria-expanded="true" aria-controls="param-1">
+                                            <h3>kích thước</h3>
+                                        </div>
+                                    </div>
 
+                                    <div id="param-1" class="collapse show" aria-labelledby="titleOne"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-1">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- param-2 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleTwo">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-2"
+                                            aria-expanded="false" aria-controls="param-2">
+                                            <h3>trọng lượng</h3>
+                                        </div>
+                                    </div>
+                                    <div id="param-2" class="collapse" aria-labelledby="titleTwo"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-2">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- param-3 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleThree">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-3"
+                                            aria-expanded="false" aria-controls="param-3">
+                                            <h3>động cơ
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div id="param-3" class="collapse" aria-labelledby="titleThree"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-3">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- param-4 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleThree">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-4"
+                                            aria-expanded="false" aria-controls="param-4">
+                                            <h3>truyền động</h3>
+                                        </div>
+                                    </div>
+                                    <div id="param-4" class="collapse" aria-labelledby="titleThree"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-4">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- param-5 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleThree">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-5"
+                                            aria-expanded="false" aria-controls="param-5">
+                                            <h3>hệ thống lái</h3>
+                                        </div>
+                                    </div>
+                                    <div id="param-5" class="collapse" aria-labelledby="titleThree"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-5">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- param-6 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleThree">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-6"
+                                            aria-expanded="false" aria-controls="param-6">
+                                            <h3>hệ thống phanh</h3>
+                                        </div>
+                                    </div>
+                                    <div id="param-6" class="collapse" aria-labelledby="titleThree"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-5">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- param-7 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleThree">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-7"
+                                            aria-expanded="false" aria-controls="param-7">
+                                            <h3>đặc tính</h3>
+                                        </div>
+                                    </div>
+                                    <div id="param-7" class="collapse" aria-labelledby="titleThree"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-5">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- param-8 -->
+                                <div class="param-item">
+                                    <div class="param-item-header" id="titleThree">
+                                        <div class="param-title" data-toggle="collapse" data-target="#param-8"
+                                            aria-expanded="false" aria-controls="param-8">
+                                            <h3>hệ thống treo</h3>
+                                        </div>
+                                    </div>
+                                    <div id="param-8" class="collapse" aria-labelledby="titleThree"
+                                        data-parent="#accordionListParam">
+                                        <div class="param-item-body">
+                                            <table class="table" id="table-content-5">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Kích thước tổng thể (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>5230x1780x1980</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kích thước thùng (DxRxC)</td>
+                                                        <td>mm</td>
+                                                        <td>3200x1670x410</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vệch bánh trước sau</td>
+                                                        <td>mm</td>
+                                                        <td>1490/1340</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chiều dài cơ sở</td>
+                                                        <td>mm</td>
+                                                        <td>2615</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Khoảng sáng gầm xe</td>
+                                                        <td>mm</td>
+                                                        <td>130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="body-content-product" id="content-8">
+
+                    <!-- download -->
+                    <div class="body-content-product" id="content8">
                         <figure class="overplay-video">
-                            <a href="#"><img src="images/content/03_66.jpg" alt=""></a>
+                            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox><img src="images/content/03_66.jpg" alt=""></a>
                         </figure>
+                        <video width="100" height="500" controls id="myVideo" style="display:none;">
+                                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+                                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+                                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+                                Your browser doesn't support HTML5 video tag.
+                            </video>
                     </div>
+
                 </section>
             </section>
 
@@ -935,10 +1475,18 @@
     <script src="js/jquery.mmenu.all.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/smoothie.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/products.js"></script>
     <script src="js/main.js"></script>
     <!-- end import file js -->
 
 
+    <script>
+        $(document).ready(function () {
+            smoothie();
+        });
+    </script>
     <!-- script plugins fb -->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"

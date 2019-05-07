@@ -15,6 +15,9 @@
     }
 }
 .scroll-top{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out;
     position: fixed;
     bottom: 10%;
     right: 3%;
@@ -26,8 +29,11 @@
     background-color: $color-bg;
     z-index: 2;
     cursor: pointer;
+}
+.scroll-top.active{
+    visibility: visible;
     opacity: 0.4;
-    @include transition(all 0.4s ease-in);
+    transition: all 0.5s ease-in;
     &:hover{
         opacity: 1;
         @include transition(all 0.4s ease-in-out)

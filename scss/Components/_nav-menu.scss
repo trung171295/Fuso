@@ -1,77 +1,181 @@
-.main-menu{
-    background-color: $color-nav;
+.navigation-container{
     display: block;
+    @include size(200px,100%);
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     overflow: hidden;
-    z-index: 1000;
-    @include transition(all 0.5s ease-out);
-    @include size(100px,100%);
-    .logo{
-        @include flex(center,center);
-        @include size(100%,100px);
-        background-color: $color-w;
-        padding: 10px 0;
-        cursor: pointer;
-        img{
-            object-fit: cover;
-        }
-    }
-    .nav-menu{
+    .main-menu{
+        background-color: $color-nav;
         display: block;
-        width: 100%;
-        height: auto;
-        .nav-main-menu{
+        overflow: hidden;
+        z-index: 1000;
+        @include transition(all 0.5s ease-out);
+        @include size(100px,100%);
+        .logo{
             @include flex(center,center);
-            @include size(100%,null);
-            li{
-                @include size(100%,);
+            @include size(100%,100px);
+            background-color: $color-w;
+            padding: 10px 0;
+            cursor: pointer;
+            img{
+                object-fit: cover;
+            }
+        }
+        .nav-menu{
+            display: block;
+            width: 100%;
+            height: auto;
+            .nav-main-menu{
                 @include flex(center,center);
-                text-align: center;
-                padding: 1.3rem 0;
-                a{
-                    @include text-menu;
-                    padding: 0;
-                    span{
-                        display: block;
-                        width: 100%;
-                        white-space: nowrap;
-                        padding-top: 6px;
+                @include size(100%,null);
+                li.nav-item{
+                    @include size(100%,100px);
+                    @include flex(center,center);
+                    text-align: center;
+                    a.nav-link{
+                        @include text-menu;
+                        @include size(100%,100%);
+                        padding: 0;
+                        padding: 1.3rem 0;
+                        cursor: pointer;
+                        .nav-img{
+                            @include flex(center,center);
+                            width: 100%;
+                        }
+                        span{
+                            display: block;
+                            width: 100%;
+                            white-space: nowrap;
+                            padding-top: 6px;
+                        }
+                        &:hover{
+                            background-color: $color-active;
+                            transition: all 0.4s ease-in;
+                            img{
+                                animation: swing ease-in-out 0.5s 1 alternate;
+                            }
+                        }
+                    }
+                    a.nav-link.search-link{
+                        @include size(100%,100%);
+                        .nav-img{
+                            @include size(100%,100%);
+                            @include flex(center,center);
+                        }
+                    }
+                    a.active{
+                        background-color: $color-active;
                     }
                 }
             }
-        }
-    }
-    .language{
-        display: block;
-        position: absolute;
-        bottom: 20px;
-        @include size(100%,null);
-        .nav-language{
-            @include flex(center,center);
-            li{
-                padding-right: 10px;
-                position: relative;
-                a{
-                    @include text(bold 14px 'Arial',$color-w);
-                    text-transform: uppercase;
-                    padding: 0;
-                }
-                a.active{
-                    color: $color-active;
-                }
-            }
-            li:nth-child(1){
-                &::before{
-                    @include content-empty('null',0,null,0,null);
-                    @include size(1px,100%);
+            .nav-main-menu{
+                .has-child-menu{
+                    display: block;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include size(100px,100%);
                     background-color: $color-active;
+                    z-index: 999;
+                    opacity: 0;
+                    transition: all 0.5s ease-out;
+                    .nav-has-child-menu{
+                        display: block;
+                        position: absolute;
+                        top: 200px;
+                        width: 100%;
+                        margin: auto;
+                        z-index: 999;
+                        li.nav-item-child{
+                            a.nav-link-child{
+                                @include size(100%,null);
+                                display: block;
+                                padding-bottom: 2rem;
+                                text-align: left;
+                                text-decoration: none;
+                                position: relative;
+                                &::before{
+                                    @include content-empty('\f0d9',0,null,-2rem,null);
+                                    color: $color-w;
+                                    font-size: 1rem;
+                                    transition: all 0.5s ease-out;
+                                    font-family: 'Font Awesome 5 Free';
+                                    font-weight: 900;
+                                }
+                                &:hover{
+                                        &::before{
+                                            right: 0;
+                                            transition: all 0.5s ease-in;
+                                    }
+                                }
+                                .nav-child-img{
+                                    @include size(100%,null);
+                                    @include flex(flex-start,null);
+                                    padding: 0 0.5rem;
+                                    padding-right: 0.8rem;
+                                    img{
+                                        @include img-ob(null,fill);
+                                        max-width: 100%;
+                                    }
+                                }
+                                span{
+                                    @include text(1rem 'Arial',$color-w);
+                                    line-height: 1.4rem;
+                                    display: inline-block;
+                                    width: 100%;
+                                    padding: 0 0.5rem;
+                                    padding-right: 0.8rem;
+                                }
+                            }
+                            .a.nav-link-child.active{
+                                &::before{
+                                    right: 0;
+                                    transition: all 0.5s ease-in;
+                                }
+                            }
+                        }
+                    }
                 }
-            }
-            li:nth-child(2){
-                padding-left: 10px;
+                .has-child-menu.active{
+                    visibility: visible;
+                    transition: all 0.5s ease-in;
+                    left: 100px;
+                    opacity: 1;
+                }
+                }
+        }
+        .language{
+            display: block;
+            position: absolute;
+            bottom: 20px;
+            @include size(100px,null);
+            .nav-language{
+                @include flex(center,center);
+                li{
+                    padding-right: 10px;
+                    position: relative;
+                    a{
+                        @include text(bold 14px 'Arial',$color-w);
+                        text-transform: uppercase;
+                        padding: 0;
+                    }
+                    a.active{
+                        color: $color-active;
+                    }
+                }
+                li:nth-child(1){
+                    &::before{
+                        @include content-empty('null',0,null,0,null);
+                        @include size(1px,100%);
+                        background-color: $color-active;
+                    }
+                }
+                li:nth-child(2){
+                    padding-left: 10px;
+                }
             }
         }
     }
