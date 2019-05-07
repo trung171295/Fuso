@@ -1,0 +1,45 @@
+.hot-ads{
+    position: fixed;
+    display: none;
+    @include size(100%,100%);
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    z-index: 1111;
+    .hot-img{
+        position: relative;
+        display: block;
+        top: 50%;
+        left: 50%;
+        @include size(70vw,null);
+        @include tranform(translate(-50%,-50%));
+        img{
+            @include img-ob(100%,cover);
+            box-shadow: 3px 3px 16px black, -3px -3px 15px black;
+            border-radius: 3px;
+        }
+    }
+    .btn-close{
+            top: -15px;
+            right: -15px;
+            @include size(36px,36px);
+            border-radius: 50%;
+            border: 1px solid $color-border;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            z-index: 1115;
+            position: absolute;
+            cursor: pointer;
+            &::before{
+                content: '\f00d';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                color: $color-w;
+                @include tranform(translate(-50%,-50%));
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900; 
+            }
+    }
+}

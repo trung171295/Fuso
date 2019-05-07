@@ -56,6 +56,7 @@
             margin-left: auto;
             p{
                 @include text(null 1rem 'Arial',$color-w);
+                margin-bottom: 0;
             }
         }
     }

@@ -7,10 +7,39 @@
         list-style-type: none;
         li{
             margin-bottom: 1px;
-            @include size(60px,55px);
+            @include size(auto,55px);
             background-color: #ff0000;
             @include flex(center,center);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
             z-index: 1000;
+            transition: all 0.5s ease-out;
+            transform: translateX(252px);
+            a{
+                @include flex(flex-start,center);
+                text-decoration: none;
+                padding: 0 1rem;
+                width: 100%;
+                img{
+                    display: block;
+                    padding-right: 1rem;
+                    float: left;
+                }
+                p{
+                    @include text(1rem 'Arial',$color-w);
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    float: left;
+                }
+                span{
+                    @include text(bold 1.1rem 'Arial',$color-w);
+                    padding-left: 0.7rem;
+                }
+            }
+            &:hover{
+                transform: translateX(0px);
+                transition: all 0.5s ease-in;
+            }
         }
     }
 }

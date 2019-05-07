@@ -6,7 +6,8 @@
 @import 'Components/_header.scss';
 @import 'Components/_footer.scss';
 @import 'Helpers/_assets.scss';
-@import 'Components/animation.scss';
+@import 'Components/_animation.scss';
+@import 'Components/preloader.scss';
 @import 'Components/_modal.scss';
 @import 'Components/_buttons.scss';
 @import 'Components/_pagination.scss';
@@ -23,3 +24,4 @@
 @import 'Layout/_showroom.scss';
 @import 'Layout/_accessary.scss';
 @import 'Layout/_product-details.scss';
+@import 'Components/ads-hot.scss';
