@@ -2,17 +2,21 @@
     background-color: $color-bg-content-abouts;
     padding: 4rem 4.5rem;
     .summary{
-        column-count: 2;
-        column-gap: 5rem;
-        div{
+       display: flex;
+        .img{
             @include flex(center,center);
+            width: 50%;
             img{
                 object-fit: cover;
             }
         }
-        p{
-            @include text(1.7rem 'Arial',$color-gr);
-            line-height: 2rem;
+        .text{
+            width: 50%;
+            padding-left: 2rem;
+            h3{
+                @include text(1.7rem 'Arial',$color-gr);
+                line-height: 2.5rem;
+            }
         }
     }
     .body{
