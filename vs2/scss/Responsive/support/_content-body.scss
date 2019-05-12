@@ -1,0 +1,39 @@
+.body{
+@include mobile{
+    .group-name{
+        border-bottom: 1px solid $color-border;
+        h1{
+            color: #000000;
+        }
+    }
+    .summary{
+        padding: 1rem 0;
+    }
+    .content-body{
+        div{
+            flex-wrap: wrap;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+@include tablet{
+    .group-name{
+        border-bottom: 1px solid $color-border;
+        h1{
+            color: #000000;
+        }
+    }
+    .summary{
+        padding: 2rem 0;
+    }
+    .content-body{
+        div{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+}

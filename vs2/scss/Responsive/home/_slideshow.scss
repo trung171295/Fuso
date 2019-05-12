@@ -1,0 +1,28 @@
+.slideshow{
+    @include mobile{
+        .sw-slideshow{
+            .swiper-slide{
+                img{
+                    @include img-ob(100%,inherit);
+                    @include mheight(170px);
+                }
+            }
+            .swiper-pagination-bullet.swiper-pagination-bullet-active{
+                background-color: $color-active!important;
+            }
+        }
+    }
+    @include tablet{
+        .sw-slideshow{
+            .swiper-slide{
+                img{
+                    @include img-ob(100%,inherit);
+                    @include mheight(460px);
+                }
+            }
+            .swiper-pagination-bullet.swiper-pagination-bullet-active{
+                background-color: $color-active!important;
+            }
+        }
+    }
+}

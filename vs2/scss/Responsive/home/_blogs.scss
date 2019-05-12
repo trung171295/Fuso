@@ -1,0 +1,107 @@
+.blogs{
+    @include mobile{
+        padding: 1rem 4%;
+        .blogs-title{
+            white-space: nowrap;
+            margin: 1.4rem 0;
+            h1{
+                @include text(bold 1.2rem 'Arial',$color-w);
+            }
+        }
+        .sw-blogs{
+            padding-top: 0.5rem;
+            .swiper-slide{
+                .slide-blog-item{
+                    .blog-item-img{
+                        img{
+                            @include mheight(260px);
+                        }
+                    }
+                    .blog-item-headline{
+                        padding: 0.5rem 0.65rem;
+                        h3{
+                            @include text(0.9rem 'Arial',$color-w);
+                        }
+                    }
+                }
+            }
+        }
+        .button-radio{
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            border-radius: 0;
+        }
+    }
+    @include tablet{
+        padding: 1rem 4%;
+        .blogs-title{
+            white-space: nowrap;
+            margin: 1.4rem 0;
+            h1{
+                @include text(bold 1.2rem 'Arial',$color-w);
+            }
+        }
+        .sw-blogs{
+            padding-top: 0.5rem;
+            .swiper-slide{
+                .slide-blog-item{
+                    .blog-item-img{
+                        img{
+                            @include mheight(260px);
+                        }
+                    }
+                    .blog-item-headline{
+                        padding: 0.5rem 0.65rem;
+                        h3{
+                            @include text(0.9rem 'Arial',$color-w);
+                        }
+                    }
+                }
+            }
+        }
+        .button-radio{
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            border-radius: 0;
+        }
+    }
+    @include mobile-sm{
+        padding: 1rem 4%;
+        .blogs-title{
+            white-space: nowrap;
+            margin: 1.4rem 0;
+            h1{
+                @include text(bold 1.15rem 'Arial',$color-w);
+            }
+        }
+        .sw-blogs{
+            padding-top: 0.5rem;
+            .swiper-slide{
+                .slide-blog-item{
+                    .blog-item-img{
+                        img{
+                            @include mheight(230px);
+                        }
+                    }
+                    .blog-item-headline{
+                        padding: 0.5rem 0.65rem;
+                        h3{
+                            @include text(0.9rem 'Arial',$color-w);
+                        }
+                    }
+                }
+            }
+        }
+        .button-radio{
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            border-radius: 0;
+        }
+    }
+}

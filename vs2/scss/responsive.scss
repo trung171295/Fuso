@@ -1,0 +1,52 @@
+@import 'Base/_normalize.scss';
+@import 'Base/_reset.scss';
+@import 'Helpers/_variables.scss';
+@import 'Helpers/_mixin.scss';
+@import 'Helpers/_assets.scss';
+
+/////////////////assets
+@import 'Responsive/asset/_header.scss';
+@import 'Responsive/asset/_footer.scss';
+@import 'Responsive/asset/_main.scss';
+@import 'Responsive/asset/_social.scss';
+
+////////////home
+@import 'Responsive/home/_slideshow.scss';
+@import 'Responsive/home/_menu-category.scss';
+@import 'Responsive/home/_blogs.scss';
+
+/////////product
+@import 'Responsive/products/_categories.scss';
+@import 'Responsive/products/_slides-banner.scss';
+@import 'Responsive/products/_list-product-category.scss';
+@import 'Responsive/products/_body-content.scss';
+
+/////////recruiment
+@import 'Responsive/recruitment/_recruitment.scss';
+
+////////accessary
+@import 'Responsive/accessary/_accessary.scss';
+
+///////blogs
+@import 'Responsive/blogs/_blogs.scss';
+@import 'Responsive/blogs/_blogs-content.scss';
+
+//////support
+@import 'Responsive/support/_list-post.scss';
+@import 'Responsive/support/_content-body.scss';
+
+//////showroom
+@import 'Responsive/showroom/_showroom.scss';
+
+/////search
+@import 'Responsive/search/_search.scss';
+
+/////service
+@import 'Responsive/service/_body-text.scss';
+
+///////contact
+@import 'Responsive/contact/_contact-info.scss';
+@import 'Responsive/contact/_feedback.scss';
+
+/////abouts
+@import 'Responsive/about/_about.scss';

@@ -1,0 +1,54 @@
+.list-post{
+    padding: 6.2rem 5rem;
+    .post-item{
+        width: 100%;
+        margin-bottom: 3.5rem;
+        @include flex(null,null);
+        position: relative;
+        .post-item-img{
+            @include size(40%,100%);
+            img{
+                @include size(100%,253px);
+                @include img-ob(100%,cover);
+            }
+        }
+        .post-item-content{
+            width: 60%;
+            padding-left: 5rem;
+            position: relative;
+            .headline{
+                margin-bottom: 2rem;
+                border-bottom: 1px solid $color-active;
+                h3{
+                    @include text(1.5rem 'Arial',$color-gr);
+                    line-height: 2rem;
+                    text-transform: uppercase;
+                    a{
+                        color: $color-gr;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .summary{
+                padding-right: 2rem;
+            }
+            .link-details{
+                position: absolute;
+                bottom: 0;
+                a{
+                    @include text(16px 'Arial',$color-gr);
+                    line-height: 1.6rem;
+                    text-decoration: underline;
+                    text-decoration-color: $color-gr;
+                }
+            }
+        }
+    }
+}
+.body{
+    .content-body{
+        div{
+            @include flex(null,null);
+        }
+    }
+}

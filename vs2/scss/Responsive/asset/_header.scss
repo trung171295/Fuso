@@ -1,0 +1,435 @@
+.main-header {
+	.navigation-container {
+		@include mobile {
+			@include size(100%, auto);
+			position: relative;
+			top: none;
+			bottom: none;
+			left: none;
+		}
+		@include tablet {
+			@include size(100%, auto);
+			position: relative;
+			top: none;
+			bottom: none;
+			left: none;
+		}
+		.main-menu {
+			@include mobile {
+				display: none;
+			}
+			@include tablet {
+				display: none;
+			}
+		}
+	}
+	.nav-menu-mobile-top {
+		@include size(100%, null);
+		@include mobile {
+			@include flex(null, center);
+			background-color: $color-w;
+			@include size(100%, auto);
+			padding: 1.25rem 0;
+			@include transition(all 0.5s ease-in-out);
+			.icon-bar {
+				@include size(10%, null);
+				cursor: pointer;
+				display: inline-block;
+				margin-left: 4%;
+				@include transition(all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+				span {
+					@include size(100%, 5px);
+					background-color: $color-icon-bar;
+					display: block;
+					position: relative;
+					border-top: 1px solid #d77380;
+					border-bottom: 1px solid #d77380;
+					@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+					&::before{
+						content: '';
+						position: absolute;
+						display: block;
+						@include size(100%, 5px);
+						background-color: $color-icon-bar;
+						border-bottom: 1px solid #d77380;
+						@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+						top: -10px;
+					}
+					&:after{
+						content: '';
+						position: absolute;
+						display: block;
+						@include size(100%, 5px);
+						background-color: $color-icon-bar;
+						border-bottom: 1px solid #d77380;
+						@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+						bottom: -10px;
+						border-top: 1px solid #d77380;
+						margin-bottom: 0;
+					}
+				}
+			}
+			.icon-bar.active{
+				span{
+					background-color: transparent;
+					border: none;
+					@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+					&::before{
+						top: 0;
+						@include tranform(rotate(45deg) scale(1.2));
+						background-color: #000;
+						border: none
+					}
+					&::after{
+						top: 0;
+						@include tranform(rotate(-45deg) scale(1.2));
+						background-color: #000;
+						border: none;
+					}
+				}
+			}
+		}
+
+		@include tablet {
+			@include flex(null, center);
+			background-color: $color-w;
+			@include size(100%, auto);
+			padding: 1.25rem 0;
+			@include transition(all 0.5s ease-in-out);
+			.icon-bar {
+				@include size(6%, null);
+				cursor: pointer;
+				display: inline-block;
+				margin-left: 4%;
+				@include transition(all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+				span {
+					@include size(100%, 5px);
+					background-color: $color-icon-bar;
+					display: block;
+					position: relative;
+					border-top: 1px solid #d77380;
+					border-bottom: 1px solid #d77380;
+					@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+					&::before{
+						content: '';
+						position: absolute;
+						display: block;
+						@include size(100%, 5px);
+						background-color: $color-icon-bar;
+						border-bottom: 1px solid #d77380;
+						@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+						top: -10px;
+					}
+					&:after{
+						content: '';
+						position: absolute;
+						display: block;
+						@include size(100%, 5px);
+						background-color: $color-icon-bar;
+						border-bottom: 1px solid #d77380;
+						@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+						bottom: -10px;
+						border-top: 1px solid #d77380;
+						margin-bottom: 0;
+					}
+				}
+			}
+			.icon-bar.active{
+				span{
+					background-color: transparent;
+					border: none;
+					@include transition( all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47));
+					&::before{
+						top: 0;
+						@include tranform(rotate(45deg) scale(1.2));
+						background-color: #000;
+						border: none
+					}
+					&::after{
+						top: 0;
+						@include tranform(rotate(-45deg) scale(1.2));
+						background-color: #000;
+						border: none;
+					}
+				}
+			}
+		}
+		.logo-mobile {
+			@include mobile {
+				@include flex(center, null);
+				margin: 0 auto;
+				img {
+					@include tranform(scale(0.9));
+					@include img-ob(null, cover);
+				}
+			}
+			@include tablet {
+				@include flex(center, null);
+				margin: 0 auto;
+				img {
+					@include tranform(scale(0.9));
+					@include img-ob(null, cover);
+				}
+			}
+		}
+		.icon-search {
+			@include mobile {
+				display: block;
+				margin-right: 4%;
+				@include text(1.5rem 'Arial', $color-border);
+				svg {
+					color: $color-border;
+				}
+			}
+			@include tablet {
+				display: block;
+				margin-right: 4%;
+				@include text(1.5rem 'Arial', $color-border);
+				svg {
+					color: $color-border;
+				}
+			}
+		}
+	}
+	.nav-menu-mobile-top.is-fixed{
+		@include mobile{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 92px;
+			padding: 0;
+			z-index: 1000;
+			@include transition(all 0.5s ease-in);
+		}
+		@include tablet{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 88px;
+			padding: 0;
+			z-index: 1000;
+			@include transition(all 0.5s ease-in);
+		}
+	}
+	.menu-mobile {
+		@include mobile {
+			display: block;
+			visibility: hidden;
+			position: absolute;
+			left: -100%;
+			top: 92px;
+			opacity: 0;
+			@include size(100%, 100%);
+			z-index: 999;
+			@include transition(all 0.5s ease-out);
+		}
+		@include tablet {
+			display: block;
+			visibility: hidden;
+			position: absolute;
+			left: -100%;
+			top: 92px;
+			opacity: 0;
+			@include size(100%, 100%);
+			z-index: 999;
+			@include transition(all 0.5s ease-out);
+		}
+		.nav-mobile {
+			@include mobile {
+				@include size(50%, 100%);
+				background-color: #262626;
+			}
+			@include tablet {
+				@include size(50%, 100%);
+				background-color: #262626;
+			}
+			.nav-menu-mobile {
+				@include mobile {
+					list-style-type: none;
+					display: block;
+					background-color: #262626;
+					margin-bottom: 5.3rem;
+					padding: 0;
+				}
+				@include tablet {
+					list-style-type: none;
+					display: block;
+					background-color: #262626;
+					margin-bottom: 5.3rem;
+					padding: 0;
+				}
+				li {
+					@include mobile {
+						padding: 1rem 0;
+						padding-left: 0.8rem;
+						padding-right: 0.3rem;
+						@include flex(null, center);
+						border-bottom: 1px solid $color-border;
+						a {
+							@include text(0.9rem 'Arial', $color-w);
+							padding: 0;
+							span {
+								text-transform: uppercase;
+							}
+							img {
+								padding-right: 0.9rem;
+								@include size(42px, 30px);
+							}
+						}
+						a.active {
+							background-color: $color-active;
+						}
+					}
+					@include tablet {
+						padding: 1rem 0;
+						padding-left: 0.8rem;
+						padding-right: 0.3rem;
+						@include flex(null, center);
+						border-bottom: 1px solid $color-border;
+						a {
+							@include text(0.9rem 'Arial', $color-w);
+							padding: 0;
+							span {
+								text-transform: uppercase;
+							}
+							img {
+								padding-right: 0.9rem;
+								@include size(42px, 30px);
+							}
+						}
+					}
+				}
+				li.active {
+					@include mobile {
+						background-color: $color-active;
+					}
+					@include tablet {
+						background-color: $color-active;
+					}
+				}
+				.child-menu-mobile {
+					@include mobile {
+						position: absolute;
+						visibility: hidden;
+						opacity: 0;
+						top: 0;
+						left: 50%;
+						@include size(0, 100%);
+						background-color: $color-active;
+						@include transition(all 0.5s ease-out);
+						&.active{
+							visibility:visible;
+							width: 50%;
+							opacity: 1;
+							@include transition(all 0.5s ease-in);
+						}
+						.nav-child-menu-mobile{
+							padding-left: 10%;
+							padding-right: 5%;
+							li{
+								border-bottom: none;
+								padding: 1.3rem 0;
+								a{
+									padding: 0;
+									@include flex(center,center);
+									img{
+										@include size(auto,auto);
+										max-width: 100%;
+
+									}
+								}
+							}
+						}
+					}
+					@include tablet {
+						position: absolute;
+						visibility: hidden;
+						opacity: 0;
+						top: 0;
+						left: 50%;
+						@include size(0, 100%);
+						background-color: $color-active;
+						@include transition(all 0.5s ease-out);
+						&.active{
+							visibility:visible;
+							width: 50%;
+							opacity: 1;
+							@include transition(all 0.5s ease-in);
+						}
+						.nav-child-menu-mobile{
+							padding-left: 10%;
+							padding-right: 5%;
+							li{
+								border-bottom: none;
+								padding: 1.3rem 0;
+								a{
+									padding: 0;
+									@include flex(center,center);
+									img{
+										@include size(auto,auto);
+										max-width: 100%;
+
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.language-mobile {
+				@include mobile {
+					.nav-lang-mobile {
+						padding-left: 1.1rem;
+						li {
+							padding: 0 0.6rem;
+							a {
+								@include text(bold 0.9 'Arial', $color-w);
+								padding: 0;
+								text-transform: uppercase;
+							}
+							a.active {
+								color: $color-active;
+							}
+						}
+						li:nth-child(1) {
+							position: relative;
+							&::before {
+								@include content-empty('', 50%, null, 0, null);
+								@include tranform(translateY(-50%));
+								@include size(1px, 60%);
+								background-color: $color-w;
+							}
+						}
+					}
+				}
+				@include tablet {
+					.nav-lang-mobile {
+					}
+				}
+			}
+		}
+	}
+}
+.menu-mobile.active{
+	display: block;
+	visibility: visible;
+	left: 0;
+	opacity: 1;
+	@include transition(all 0.5s ease-in);
+}
+.child-menu-mobile.active{
+	@include mobile{
+		visibility:visible;
+		left: 50%;
+		opacity: 1;
+		@include transition(all 0.5s ease-in);
+	}
+	@include tablet{
+		visibility:visible;
+		left: 50%;
+		opacity: 1;
+		@include transition(all 0.5s ease-in);
+	}
+}

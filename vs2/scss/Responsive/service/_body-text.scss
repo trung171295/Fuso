@@ -1,0 +1,28 @@
+.body-content{
+    @include mobile{
+        .body-text{
+            margin-top: 2rem;
+            div{
+                column-count: 1;
+                padding: 0;
+                img{
+                    @include flex(center,null);
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    @include tablet{
+        .body-text{
+            margin-top: 2rem;
+            div{
+                column-count: 1;
+                padding: 0;
+                img{
+                    @include flex(center,null);
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

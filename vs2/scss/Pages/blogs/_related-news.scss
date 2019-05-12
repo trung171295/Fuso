@@ -1,0 +1,57 @@
+.related-news{
+    padding: 2.3rem;
+    background-color: #f8f9fa;
+    .title{
+        text-align: center;
+        margin-bottom: 3.2rem;
+        h3{
+            @include text(1.6rem 'Arial',#d70202);
+            text-transform: uppercase;
+        }
+    }
+    .list-blogs-related{
+        @include grid(repeat(3,1fr),auto);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        .blogs-related-item{
+            width: 100%;
+            display: block;
+            position: relative;
+            .blogs-related-item-img{
+                @include size(100%,236px);
+                img{
+                    @include img-ob(100%,cover);
+                    height: 100%;
+                }
+            }
+            .blogs-related-item-content{
+                padding: 1.5rem 0;
+                .push-date{
+                    p{
+                        @include text(0.85rem 'Arial',$color-gr);
+                        margin-bottom: 1.4rem;
+                    }
+                }
+                .headline{
+                    margin-bottom: 1.4rem;
+                    h3{
+                        @include text(1.1rem 'Arial',$color-gr);
+                    }
+                    a{
+                        color: $color-gr;
+                        text-decoration: none;
+                    }
+                }
+                .summary{
+                    margin-bottom: 1.5rem;
+                    p{
+                        opacity: 0.5;
+                    }
+                }
+                .link-seemore{
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

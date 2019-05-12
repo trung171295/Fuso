@@ -1,0 +1,82 @@
+.body{
+    @include mobile{
+        padding: 0 4%;
+        .name-requitment{
+            padding-right: 0;
+        }
+        .list-question{
+            .accordionListQuestion{
+                padding-right: 0;
+                .question-item{
+                    padding-right: 0;
+                    .question-item-header{
+                        padding-right: 0;
+                        .question-title{
+                            padding: 1rem 0;
+                            &::before{
+                                right: 0;
+                                @include size(25px,25px);
+                            }
+                            h3{
+                                line-height: 1.5rem;
+                                padding-right: 1rem;
+                            }
+                        }
+                    }
+                    .question-item-body{
+                        padding: 1.5rem 0;
+                    }
+    
+                }
+            }
+        }
+        .pagi{
+            margin-top: 0;
+            .pagination{
+                padding: 0;
+                padding: 2rem 0!important;
+                width: 100%;
+            }
+        }
+    }
+    @include tablet{
+        padding: 0 4%;
+        .name-requitment{
+            padding-right: 0;
+        }
+        .list-question{
+            .accordionListQuestion{
+                padding-right: 0;
+                .question-item{
+                    padding-right: 0;
+                    .question-item-header{
+                        padding-right: 0;
+                        .question-title{
+                            padding: 1rem 0;
+                            &::before{
+                                right: 0;
+                                @include size(25px,25px);
+                            }
+                            h3{
+                                line-height: 1.5rem;
+                                padding-right: 1rem;
+                            }
+                        }
+                    }
+                    .question-item-body{
+                        padding: 1.5rem 0;
+                    }
+    
+                }
+            }
+        }
+        .pagi{
+            margin-top: 0;
+            .pagination{
+                padding: 0;
+                padding: 2rem 0!important;
+                width: 100%;
+            }
+        }
+    }
+}

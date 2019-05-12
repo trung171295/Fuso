@@ -1,0 +1,75 @@
+.menu-category{
+    @include mobile{
+        height: 80px;
+        .nav-category{
+            @include flex(null,center);
+            li{
+                @include size(50%,100%);
+                a{
+                    @include flex(null,center);
+                    @include text(bold 1rem 'Arial'!important,$color-gr);
+                    padding: 0 5%!important;
+                    img{
+                        @include size(35px,35px);
+                    }
+                    span{
+                        padding-left: 0.5rem;
+                        svg{
+                            font-size: 2rem;
+                            right:5%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    @include mobile-sm{
+        height: 70px;
+        .nav-category{
+            @include flex(null,center);
+            li{
+                @include size(50%,100%);
+                a{
+                    @include flex(null,center);
+                    @include text(bold 0.8rem 'Arial'!important,$color-gr);
+                    padding: 0 5%!important;
+                    img{
+                        @include size(32px,32px);
+                    }
+                    span{
+                        padding-left: 0.3rem;
+                        svg{
+                            font-size: 1.5rem;
+                            right:5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include tablet{
+        height: 80px;
+        .nav-category{
+            @include flex(null,center);
+            li{
+                @include size(50%,100%);
+                a{
+                    @include flex(null,center);
+                    @include text(bold 1rem 'Arial'!important,$color-gr);
+                    padding: 0 5%!important;
+                    img{
+                        @include size(35px,35px);
+                    }
+                    span{
+                        padding-left: 0.5rem;
+                        svg{
+                            font-size: 2rem;
+                            right:5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

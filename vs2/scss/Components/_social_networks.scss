@@ -1,0 +1,75 @@
+.stick-right{
+    position: fixed;
+    bottom: 30%;
+    right: 0;
+    z-index: 998;
+    @include tranform(translateY(-50%));
+    pointer-events: none;
+    .item{
+      &:hover{
+        right: 0;
+        .left-show{
+          background-color: $color-active;
+        }
+      }
+      border-radius: 5px 0 0 5px;
+      pointer-events: all;
+      background-color: $color-active;
+      cursor: pointer;
+      margin-bottom: 2px;
+      transition: right .4s ease;
+      position: relative;
+      right: calc(-100% + 50px);
+      display: flex;
+      flex-wrap: nowrap;
+      height: 50px;    
+      .left-show{
+        display: flex;
+        width: 50px;
+        background-color: $color-active;
+        transition: .4s ease;
+      }
+      .right-hide{
+        text-align: center;
+        display: flex;
+        padding: 25px 1rem;
+        color: #fff;
+        line-height: 0;
+        background-color: $color-active;
+        a{
+          color: #fff;
+          text-decoration: none;        
+          padding-left: 5px;
+        }
+        a[href^="tel:"]{
+          font-weight: bold;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+.scroll-top{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    @include size(54px,54px);
+    border-radius: 50%;
+    border: 1px solid $color-border;
+    @include flex(center,center);
+    color: $color-border;
+    background-color: $color-bg;
+    z-index: 2;
+    cursor: pointer;
+}
+.scroll-top.active{
+    visibility: visible;
+    opacity: 0.4;
+    transition: all 0.5s ease-in;
+    &:hover{
+        opacity: 1;
+        @include transition(all 0.4s ease-in-out)
+    }
+}

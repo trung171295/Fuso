@@ -1,0 +1,109 @@
+.list-post-blogs{
+    @include mobile{
+        padding: 2rem 4%;
+        .list-blogs{
+            padding: 0;
+            margin-bottom: 2rem;
+            .group-blogs-name{
+                h1{
+                    color: $color-active;
+                }
+            }
+            .blogs-item{
+                flex-wrap: wrap;
+                border-bottom: 1px solid $color-border;
+                padding-bottom: 1.5rem;
+                .blogs-item-img{
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+                .blogs-item-content{
+                    width: 100%;
+                    padding-left: 0;
+                    .headline{
+                        padding-right: 0;
+                    }
+                    .summary{
+                        border-bottom: none;
+                        margin-bottom: 1rem;
+                    }
+                    .link-seemore{
+                        position:static;
+                        bottom: 0;
+                        a{
+                            color: $color-active;
+                        }
+                    }
+                }
+            }
+            .button-see-all{
+                .btn-seeall{
+                    background-color: #000000;
+                }
+            }
+        }
+        .promotion{
+            background-color: transparent;
+            .button-see-all{
+                .btn-seeall.blue{
+                    background-color: $color-active;
+                }
+            }
+        }
+    }
+    @include tablet{
+        padding: 2rem 4%;
+        .list-blogs{
+            padding: 0;
+            margin-bottom: 2rem;
+            .group-blogs-name{
+                h1{
+                    color: $color-active;
+                }
+            }
+            .blogs-item{
+                flex-wrap: wrap;
+                border-bottom: 1px solid $color-border;
+                padding-bottom: 1.5rem;
+                .blogs-item-img{
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    img{
+                        height: 392px;
+                    }
+                }
+                .blogs-item-content{
+                    width: 100%;
+                    padding-left: 0;
+                    .headline{
+                        padding-right: 0;
+                    }
+                    .summary{
+                        border-bottom: none;
+                        margin-bottom: 1rem;
+                    }
+                    .link-seemore{
+                        position:static;
+                        bottom: 0;
+                        a{
+                            color: $color-active;
+                        }
+                    }
+                }
+            }
+            .button-see-all{
+                .btn-seeall{
+                    background-color: #000000;
+                }
+            }
+        }
+        .promotion{
+            background-color: transparent;
+            .button-see-all{
+                .btn-seeall.blue{
+                    background-color: $color-active;
+                }
+            }
+        }
+    }
+}

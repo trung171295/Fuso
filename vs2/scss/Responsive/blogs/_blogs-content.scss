@@ -1,0 +1,94 @@
+.body-content{
+    .body{
+        @include mobile{
+            .group-name{
+                padding: 1.5rem 0;
+                h2{
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+            .push-date{
+                padding: 1rem 0;
+            }
+            .body-text{
+                p{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        @include tablet{
+            .push-date{
+                padding: 2rem 0;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+.related-news{
+    @include mobile{
+        padding: 2rem 4%;
+        .title{
+            margin-bottom: 2rem;
+        }
+        .list-blogs-related{
+            @include flex(null,null);
+            flex-wrap: wrap;
+            .blogs-related-item{
+                border-bottom: 1px solid $color-border;
+                margin-bottom: 2rem;
+                .blogs-related-item-content{
+                    .link-seemore{
+                        position: static;
+                        bottom: 0;
+                        a{
+                            color: $color-active;
+                        }
+                    }
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    @include tablet{
+        padding: 2rem 4%;
+        .title{
+            margin-bottom: 2rem;
+        }
+        .list-blogs-related{
+            @include flex(null,null);
+            flex-wrap: wrap;
+            .blogs-related-item{
+                border-bottom: 1px solid $color-border;
+                margin-bottom: 2rem;
+                .blogs-related-item-img{
+                    height: 392px;
+                }
+                .blogs-related-item-content{
+                    .push-date{
+                        font-size: 1rem;
+                    }
+                    .headline{
+                        h3{
+                            font-size:1rem;
+                        }
+                    }
+                    .link-seemore{
+                        position: static;
+                        bottom: 0;
+                        a{
+                            color: $color-active;
+                        }
+                    }
+                }
+                &:last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.banner-abouts{
+    @include mobile{
+        height: 190px;
+    }
+    @include tablet{
+        height: 320px;
+    }
+}
+.maps-abouts{
+    @include mobile{
+        .menu-maps{
+            .nav-menu-maps{
+                padding: 1.5rem 0;
+                justify-content: center;
+                li{
+                    padding: 0 1rem;
+                    a{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .content-value{
+            padding: 0;
+            .summary{
+                display: block;
+                padding: 2rem 4%;
+                .img{
+                    margin-bottom: 2rem;
+                    width: 100%;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .text{
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+            .body{
+                column-count: 1;
+                margin-top: 2rem;
+
+            }
+        }
+
+        .community{
+            padding:2rem 4%;
+            display: block;
+            .text{
+                width: 100%;
+                padding: 0;
+            }
+            .images{
+                width: 100%;
+            }
+        }
+    }
+    @include tablet{
+        .menu-maps{
+            .nav-menu-maps{
+                padding: 2rem 0;
+                justify-content: center;
+                li{
+                    padding: 0 1.5rem;
+                    a{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .content-value{
+            padding: 0;
+            .summary{
+                display: block;
+                padding: 2rem 4%;
+                .img{
+                    margin-bottom: 2rem;
+                    width: 100%;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .text{
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+            .body{
+                column-count: 1;
+                margin-top: 2rem;
+
+            }
+        }
+
+        .community{
+            padding:2rem 4%;
+            display: block;
+            .text{
+                width: 100%;
+                padding: 0;
+            }
+            .images{
+                width: 100%;
+            }
+        }
+    }
+    @include mobile-sm{
+        .menu-maps{
+            .nav-menu-maps{
+                padding: 1.2rem 0;
+                justify-content: center;
+                li{
+                    padding: 0 0.8rem;
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

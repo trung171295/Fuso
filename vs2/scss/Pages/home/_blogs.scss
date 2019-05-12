@@ -1,0 +1,98 @@
+.blogs{
+    background-color: $color-bg-blogs;
+    padding: 1rem 2rem;
+    position: relative;
+    .blogs-title{
+        margin: 1.5rem 0;
+        h1{
+            @include text(bold 2rem 'Arial',$color-w);
+            text-transform: uppercase;
+        }
+    }
+    .sw-blogs{
+        position: relative;
+        padding-top: 1.1rem;
+        .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            background-color: $color-active!important;
+        }
+        .swiper-slide{
+            @include size(100%,null);
+            .slide-blog-item{
+                @include size(100%,null);
+                &:hover{
+                    .blog-item-headline{
+                        background-color: rgba($color: $color-active, $alpha: 0.5);
+                        @include transition(all 0.5s ease-out);
+                    }
+                }
+                .blog-item-img{
+                    @include size(100%,null);
+                    margin-bottom: 0;
+                    img{
+                        @include img-ob(100%,cover);
+                        @include mheight(316px);
+                    }
+                }
+                .blog-item-headline{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: rgba($color: #000000, $alpha: 0.5);
+                    padding: 1rem 1.3rem;
+                    @include transition(all 0.5s ease-in);
+                    h3{
+                        @include text(14px 'Arial',null);
+                        a{
+                            text-decoration: none;
+                            color: $color-w;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination{
+            position: relative;
+            margin:1rem 0;
+            width: 100%;
+            bottom: 0s;
+        }
+    }
+    .button-radio{
+        background-color: #f6f9fa;
+        border-radius: 0.5rem;
+        padding: 0.9rem;
+        width: 20%;
+        right: 2rem;
+        position: absolute;
+        top: 1.5rem;
+        display: inline-block;
+        a{
+            @include flex(null,center);
+            text-decoration: none;
+            .btn-radio-img{
+                @include flex(center,center);
+                padding-right: 0.9rem;
+                img{
+                    max-width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            .btn-radio-name{
+                .name{
+                    h4{
+                        @include text(bold 0.85rem 'Arial',#ed1c24);
+                    }
+                }
+                .logan{
+                    p{
+                        @include text(0.75rem 'Arial',#999999);
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.menu-maps{
+    width: 100%;
+    @include box-shadow(13px,10px,20px,#fafafa,false);
+    @include flex(center,center);
+    @include transition(all 0.5s ease-out);
+    background-color: $color-w;
+    .nav-menu-maps{
+        padding: 1.6rem 0;
+        li{
+            padding: 1.1rem 1.8rem;
+            border-right: 1px solid $color-border;
+            &:last-child{
+                border-right: none;
+            }
+            a{
+                @include text(1.3rem 'Arial',$color-gr);
+                padding: 0;
+                &:hover{
+                    color: $color-active;
+                    border-bottom: 1px solid $color-active;
+                }
+            }
+            a.active{
+                color: $color-active;
+                border-bottom: 1px solid $color-active;
+            }
+        }
+    }
+}
+.menu-maps.is-fixed{
+    position: fixed;
+    top: 0;
+    background-color: $color-w;
+    @include transition(all 0.5s ease-in);
+    box-shadow: 13px 10px 20px #fafafa;
+    z-index: 1111;
+    .nav-menu-maps{
+        background-color: $color-w;
+        @include flex(center, center);
+    }
+}

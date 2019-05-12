@@ -1,0 +1,91 @@
+.main-footer{
+    margin-left: 100px;
+    .footer{
+        background-color: $color-gr;
+        padding: 1.5rem 2.5rem;
+        .top-footer{
+            @include flex(null,center);
+            .menu-footer{
+                .nav-menu-footer{
+                    li{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            top: 0;
+                            right: 0;
+                            @include size(1px,100%);
+                            background-color: #000000;
+                        }
+                        &:last-child{
+                            &::before{
+                                display: none;
+                            }
+                        }
+                        a{
+                            @include text(1rem 'Airal',$color-w);
+                            text-transform: uppercase;
+                            padding: 0.25rem 1.25rem;
+                            transition: all 0.5s ease-out;
+                            display: block;
+                            &:hover{
+                                color:$color-active;
+                                transition: all 0.5s ease-in;
+                            }
+                        }
+                        a.active{
+                            color:$color-active;
+                            transition: all 0.5s ease-in;
+                        }
+                    }
+                    li:nth-child(1){
+                        a{
+                            padding-left: 0;
+                        }
+                    }
+                }
+                .copyright{
+                    margin-top: 1.2rem;
+                    p{
+                        @include text(1rem 'Arial',$color-w);
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .network-social-footer{
+                margin-left: auto;
+                .nav-network-social-footer{
+                    li{
+                        @include size(30px,30px);
+                        @include flex(center,center);
+                        text-align: center;
+                        border-radius: 50%;
+                        border:1px solid $color-w;
+                        margin-right: 0.8rem;
+                        a{
+                            color: $color-w;
+                            padding: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .license{
+        padding: 1.7rem 2.5rem;
+        background-color: $color-nav;
+        @include flex(null,center);
+
+        .license-brands{
+            margin-left: auto;
+            p{
+                @include text(null 1rem 'Arial',$color-w);
+                margin-bottom: 0;
+            }
+        }
+    }
+    .social-mobile{
+        display: none;
+    }
+}

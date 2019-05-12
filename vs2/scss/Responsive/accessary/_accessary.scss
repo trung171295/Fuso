@@ -1,0 +1,161 @@
+.list-product{
+    @include mobile{
+        padding: 2rem 4%;
+        .products-container{
+            @include flex(null,null);
+            flex-wrap: wrap;
+            width: 100%;
+            .products-item{
+                width: 50%;
+                padding: 1rem;
+                margin-bottom: 2rem;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    @include tablet{
+        padding: 2rem 4%;
+        .products-container{
+            @include flex(null,null);
+            flex-wrap: wrap;
+            width: 100%;
+            .products-item{
+                width: 50%;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                .product-item-img{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.fancybox-content{
+    @include mobile{
+        width: 90%!important;
+        height: auto!important;
+    }
+    @include tablet{
+        width: 85%!important;
+        height: auto!important;
+    }
+}
+.modal-ac{
+    @include mobile{
+        display: none;
+        width: 100%;
+        .modal-body{
+            width: 100%;
+            padding: 1.5rem;
+            flex-wrap: wrap;
+            @include flex(null,null);
+        }
+        .img-product{
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+            @include flex(center,center);
+            margin: auto;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+        }
+        .product-content{
+            margin-top: 2rem;
+            .product-name{
+                margin-bottom: 2rem;
+                h3{
+                    text-transform: uppercase;
+                    @include text(1.5rem 'Arial',$color-active);
+                }
+            }
+            .specifications{
+                .nav-specifications{
+                    display: block;
+                    div{
+                        padding: 1.2rem 0;
+                        border-bottom: 1px solid $color-border;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    div:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    @include tablet{
+        display: none;
+        width: 100%;
+        .fancybox-content{
+            width: 90%!important;
+        }
+        .modal-body{
+            width: 100%;
+            padding: 2rem;
+            flex-wrap: wrap;
+            @include flex(null,null);
+        }
+        .img-product{
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+            @include flex(center,center);
+            margin: auto;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+            }
+        }
+        .product-content{
+            margin-top: 2rem;
+            .product-name{
+                margin-bottom: 2rem;
+                h3{
+                    text-transform: uppercase;
+                    @include text(1.5rem 'Arial',$color-active);
+                }
+            }
+            .specifications{
+                .nav-specifications{
+                    display: block;
+                    div{
+                        padding: 1.2rem 0;
+                        border-bottom: 1px solid $color-border;
+                        p{
+                            margin-bottom: 0;
+                        }
+                    }
+                    div:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.fancybox-close-small{
+    @include mobile{
+        border-radius: 50%;
+        @include size(2rem,2rem);
+        box-shadow: 0 0 4rem 0.1rem $color-border;
+        font-size: 1rem;
+        @include transition(all 0.5s ease-out);
+        &:hover{
+            background-color: $color-border;
+            @include transition(all 0.5s ease-in);
+            color:$color-w;
+        }
+    }
+
+}

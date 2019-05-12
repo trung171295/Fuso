@@ -1,0 +1,34 @@
+.slides-banner{
+    @include mobile{
+        @include size(100%,212px);
+        .sw-slides-banner{
+            .swiper-slide{
+                img{
+                    @include size(100%,100%);
+                    object-fit: cover;
+                }
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet.swiper-pagination-bullet-active{
+                    background-color: $color-active!important;
+                }
+            }
+        }
+    }
+    @include tablet{
+        @include size(100%,310px);
+        .sw-slides-banner{
+            .swiper-slide{
+                img{
+                    @include size(100%,100%);
+                    object-fit: cover;
+                }
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet.swiper-pagination-bullet-active{
+                    background-color: $color-active!important;
+                }
+            }
+        }
+    }
+}

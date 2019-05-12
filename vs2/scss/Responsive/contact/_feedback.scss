@@ -1,0 +1,22 @@
+.feedback{
+    @include mobile{
+        .form-feedback{
+            .footer-feedback{
+                padding: 1.5rem 0;
+                .btn-submit{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include tablet{
+        .form-feedback{
+            .footer-feedback{
+                padding: 1.5rem 0;
+                .btn-submit{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.banner{
+    position: relative;
+}
+.select-location{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    @include flex(center,null);
+    flex-wrap: wrap;
+    .form-control{
+        width: 242px;
+        height: 2.5rem;
+        margin-right: 2rem;
+        border-color: transparent;
+        border-radius: 0;
+        &:focus{
+            outline: none;
+            box-shadow: 0 0 0 0.1rem $color-border;
+            border-color: transparent;
+        }
+    }
+    .btn-delete-option{
+        width: 100%;
+        width: 242px;
+        height: 2.5rem;
+        background-color: $color-active;
+        border: 1px solid $color-w;
+        @include text(bold 1rem 'Arial',$color-w);
+        text-transform: uppercase;
+    }
+}

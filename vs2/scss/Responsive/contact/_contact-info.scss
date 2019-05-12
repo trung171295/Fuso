@@ -1,0 +1,24 @@
+.contact-info{
+    @include mobile{
+        margin-bottom: 3rem;
+        .group-name{
+            border-bottom: none;
+            h1{
+                color: $color-active;
+            }
+        }
+        .site-tite{
+        }
+    }
+    @include tablet{
+        margin-bottom: 3rem;
+        .group-name{
+            border-bottom: none;
+            h1{
+                color: $color-active;
+            }
+        }
+        .site-tite{
+        }
+    }
+}
